@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  html ,body{
+  	font-family : 'Kumbh Sans';
+	font-size: 18px;
+	margin:0;
+	padding:0; 
+	background-color:hsl(185, 75%, 39%);
+	
+  background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top -489px left -489px, bottom -489px right -400px; 
+
+	 }
+	 main{
+		height: 100vh;
+	 }
+
+	   .profile-card{
+  	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	flex-direction:column;
+	margin: 0.625rem auto ;
+
+  }
+	
+	.profile-top{
+		border-radius : 25px 25px 0 0 ;
+	}
+  	.profile-img{
+  	border-radius:50px;
+	border: 7px solid white;
+	margin-top:-50px;
+  }
+  .headbaord-bottom{
+	  width:350px;
+	text-align:center;
+	
+  }
+  .profile-body{
+  	padding:25px 0;
+	width:350px;
+	text-align:center;
+  }
+
+	.headbaord-bottom, .profile-body, .profile-footer{
+		background-color:white;
+	}
+  .name {
+  	font-weight:bold;
+	display: inline-block;
+	
+  }
+  .loc{
+  	text-align:center;
+	font-size:small;
+	padding: 1em;
+	margin: 0;
+  }
+  .loc, .age{
+  	color:hsl(0, 0%, 59%);
+  }
+  
+ .profile-footer{
+  	display: flex;
+	justify-content: space-around;
+	width:350px;
+	padding:25px 0;
+	border-top: 1px solid hsl(0, 0%, 59%);
+	border-radius :  0 0 25px 25px;
+	
+
+  }
+  
+  .profile-footer > p {
+		text-align:center;
+		color: hsl(0, 0%, 59%);
+	}
+  .profile-footer p > span{
+  		display:block;
+		text-align:center;
+		font-weight:bold;
+		color: black;
+		font-size: 18px;
+  }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+	<div class="profile-card">
+	<img class="profile-top" src="images/bg-pattern-card.svg" alt="headboard image"/>
+	<div class="headbaord-bottom">
+		<img class="profile-img" src="images/image-victor.jpg" alt="Image of Victor Crest"/>
+	</div>
+	<div class="profile-body">
+  		<h3 class="name">Victor Crest</h3>
+		<span class="age">26</span>
+  		<p class="loc">London</p>
+	</div>
+  <div class="profile-footer">
+  	<p class="col1">
+  			<span class="numberFollower">80K</span>
+  Followers
+	</p>
+	<p class="col2">
+  <span class="numberLikes">803K</span>
+  Likes
+	</p>
+	<p class="col3">
+  <span>1.4K</span>
+  Photos
+	</p>
+  </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ruben Fernandes</a>.
+  </div>
+</body>
+</html>
